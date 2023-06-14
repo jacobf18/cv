@@ -1,0 +1,121 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
+\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Fontin}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Jacob Feitelberg - vita},pdfauthor={Jacob Feitelberg}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Jacob Feitelberg}\\[1cm]
+Columbia University, Industrial Engineering and Operations Research\\
+email: \href{mailto:jef2182@columbia.edu}{jef2182@columbia.edu}\\
+\textsc{url}: \href{https://jacobf18.github.io}{https://jacobf18.github.io}\\ 
+\vfill
+
+%%\hrule
+\section*{Education}
+\years{2023-} Ph.D. in Operations Research \hfill Columbia University
+\\
+\\
+\years{2022-2023} M.S.E. in Applied Mathematics and Statistics \hfill Johns Hopkins University
+\\
+\\
+\years{2018-2022} B.S. in Applied Mathematics and Statistics \hfill Johns Hopkins University
+
+\section*{Employment}
+
+\section*{Publications}
+
+\section*{Honors and Awards}
+
+\section*{Areas of Specialty}
+Optimization, Causal Inference, Combinatorics, Control Theory
+
+\section*{Publications \amper{} talks}
+
+\subsection*{Journal articles}
+\noindent
+\years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
+\years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
+\years{1905b}Einstein, Albert (1905), A new determination of molecular dimensions. \emph{PhD dissertation}.\\
+\years{1905c}Einstein, Albert (1905), “On the Motion—Required by the Molecular Kinetic Theory of Heat—of Small Particles Suspended in a Stationary Liquid", \emph{Annalen der Physik} 17: 549–560. 
+\years{1905d}Einstein, Albert (1905), “On the Electrodynamics of Moving Bodies", \emph{Annalen der Physik} 17: 891–921.\\
+\years{1905e}Einstein, Albert (1905), “Does the Inertia of a Body Depend Upon Its Energy Content?", \emph{Annalen der Physik} 18: 639–641.\\
+\years{1915}Einstein, Albert (1915), “Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)", \emph{Koniglich Preussische Akademie der Wissenschaften}: 844–847\\
+\years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
+\years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
+
+\subsection*{Books}
+\noindent
+\years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
+
+\subsection*{Newspaper articles}
+\noindent
+\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
+\years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+
+\section*{Teaching}
+
+...
+
+%\hrule
+\section*{Service to the profession}
+
+...
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+\fontspec{Times New Roman}\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+\end{center}
+
+\end{document}
